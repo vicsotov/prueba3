@@ -1,0 +1,92 @@
+from enum import auto
+def registrar_usuario():
+    nombreapellidousuario = input("ingrese nombre y apellido del usuario")
+
+def registrar_patente():
+    tipovehiculo = input("ingrese tipo de auto: ")
+    multasvehiculo = input("ingrese multas del auto con su monto y fecha")
+    fechaderegistro = input("ingrese la fecha de registro del auto")
+    nombredueño = input("ingrese el nombre del dueño del auto")
+
+
+    preciovehiculo = input("ingrese el precio del auto: ")
+
+    while True:
+      preciovehiculo = int(input("ingrese el precio del auto: "))
+      if preciovehiculo > 5000000:
+        print("precio colocado correctamente")
+      else:
+        print("precio colocado no corresponde")
+
+
+while True:
+      patentevehiculo = int(input("ingrese patente del auto: "))
+      if patentevehiculo > 6
+        print("patente incorrecta.")
+      else:
+        print("patente de auto añadida correctamente")
+
+while True:
+      marcavehiculo = int(input("ingrese marca del auto: "))
+      if marcavehiculo > 2 or < 15
+        print("marca del auto correcta.")
+      else:
+        print("marca del auto incorrecta")
+
+        # Guardar informacion
+auto[patentevehiculo] = {
+        "tipo": tipovehiculo,
+        "patente": patentevehiculo,
+        "marca": marcavehiculo,
+        "precio": preciovehiculo,
+        "multas": multasvehiculo,
+        "fecha del registro del auto": fechaderegistro,
+        "nombre del dueño": nombredueño,
+    }
+
+     print("El auto ha sido registrado exitosamente.")
+
+     def buscar_vehiculos():
+patentevehiculo = input("Ingrese la patente del auto buscado: ")
+
+    if patentevehiculo in auto:
+        auto = auto[patentevehiculo]
+        print(auto)
+    else:
+        print("la patente ingresada no corresponde a ningún auto registrado.")
+
+def imprimir_certificados():
+    patente = input("Ingrese la patente del auto para el certificado: ")
+
+    if patentevehiculo in auto:
+        auto = auto[patentevehiculo]
+        print("patente:",patentevehiculo)
+        print("marca:",marcavehiculo)
+        print("multas:",multasvehiculo["monto"],["fecha"])
+        print("tipo:",tipovehiculo)
+        print("precio:",preciovehiculo)
+        print("fecha de registro del auto:",fechaderegistro)
+        print("nombre del dueño:"nombredueño)
+    else:
+        print("la patente ingresada no corresponde a ningún auto registrado.")
+
+def menu():
+    while True:
+        print("1. Registrar auto")
+        print("2. Buscar auto")
+        print("3. Imprimir certificados ")
+        print("4. Salir")
+
+        opcion = input("Ingrese el número de la opción que desea: ")
+
+        if opcion == "1":
+            registrar_auto()
+        elif opcion == "2":
+            buscar_auto()
+        elif opcion == "3":
+            imprimir_certificados()
+        elif opcion == "4":
+            print("Gracias por usar el programa. ¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Por favor, intente nuevamente.")
